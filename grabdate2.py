@@ -1,14 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-def print_banner():
-    banner = """
-    █▀▀ ▄▀█ ▀█▀ █▀▀ █▀█ █▀ █▀▀ ▄▀█ █▀▄▀█   █▀▀ █▀█ █▀█ █▀█ ░
-    █▄▄ █▀█ ░█░ ██▄ █▀▄ ▄█ █▄▄ █▀█ █░▀░█   █▄▄ █▄█ █▀▄ █▀▀ ▄
-                   devel0perz t.me/devonaji
-    """
-    print(banner)
-
 def grab_domains_from_page(url):
     response = requests.get(url)
     if response.status_code != 200:
